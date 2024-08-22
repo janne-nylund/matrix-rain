@@ -73,12 +73,24 @@ const Column: Component<ColumnProps> = (props) => {
 };
 
 const App: Component = () => {
+  const [text, setText] = createSignal("");
+
   return (
-    <div class="cols">
-      {Array.from(Array(44)).map((_, index) => {
-        return <Column index={index % 4} />;
-      })}
-    </div>
+    <>
+      <div class="cols">
+        {Array.from(Array(44)).map((_, index) => {
+          return <Column index={index % 4} />;
+        })}
+      </div>
+      <div class="input">
+        <input
+          class="input-matrix"
+          value={text()}
+          onInput={(e) => setText(e.target.value)}
+        />
+        <span class="text">{text()}</span>
+      </div>
+    </>
   );
 };
 
