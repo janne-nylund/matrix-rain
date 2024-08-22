@@ -2,14 +2,18 @@
   "name": "vite-template-solid",
   "version": "0.0.0",
   "description": "",
+  "homepage": "https://janne-nylund.github.io/matrix-rain/",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "solid-devtools": "^0.29.2",
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
