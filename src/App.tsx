@@ -18,22 +18,21 @@ const Column: Component<ColumnProps> = (props) => {
   let timeOutId: number;
   let intervalId: number;
 
-  const shiftArray = () => {
-    if (arr().length > 0 && arr().every((x) => x === "")) {
+  const shiftArray = (arr: string[]) => {
+    if (arr.length > 0 && arr.every((x) => x === "")) {
       setLength(Math.floor(Math.random() * 9) + 10);
       return [];
     }
-    const newArr = [...arr()];
 
-    if (newArr.length < length()) {
-      newArr.unshift(chars[Math.floor(Math.random() * 56)]);
-    } else if (newArr.length < 24) {
-      newArr.unshift("");
+    if (arr.length < length()) {
+      arr.unshift(chars[Math.floor(Math.random() * 56)]);
+    } else if (arr.length < 24) {
+      arr.unshift("");
     } else {
-      newArr.unshift("");
-      newArr.pop();
+      arr.unshift("");
+      arr.pop();
     }
-    return newArr;
+    return [...arr];
   };
 
   onMount(() => {
@@ -41,7 +40,7 @@ const Column: Component<ColumnProps> = (props) => {
       () => {
         intervalId = setInterval(
           () => {
-            setArr(shiftArray());
+            setArr(shiftArray(arr()));
           },
           props.index === 0 || props.index === 2 ? 200 : 300,
         );
