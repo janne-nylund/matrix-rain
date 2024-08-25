@@ -112,6 +112,18 @@ code {
     transition: all 0.4s ease-in-out;
 }
 
+.text-matrix {
+    width: 100%;
+    width: 400px;
+    padding: 12px 20px;
+    margin: 10px 50px;
+    color: #00ff00;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+
 .input-matrix::placeholder {
     color: #008000;
     opacity: 0.8;

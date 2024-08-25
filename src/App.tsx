@@ -5,6 +5,7 @@ import {
   onCleanup,
   onMount,
 } from "solid-js";
+import { EditableText } from "./EditableText";
 
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=[]{}|;:¿€Ø<>?/~`";
 
@@ -25,14 +26,15 @@ const Column: Component<ColumnProps> = (props) => {
     }
 
     if (arr.length < length()) {
-      arr.unshift(chars[Math.floor(Math.random() * 56)]);
+      arr = [chars[Math.floor(Math.random() * 56)], ...arr];
     } else if (arr.length < 24) {
-      arr.unshift("");
+      arr = ["", ...arr];
     } else {
-      arr.unshift("");
+      arr = ["", ...arr];
       arr.pop();
     }
-    return [...arr];
+
+    return arr;
   };
 
   onMount(() => {
@@ -40,7 +42,7 @@ const Column: Component<ColumnProps> = (props) => {
       () => {
         intervalId = setInterval(
           () => {
-            setArr(shiftArray(arr()));
+            setArr(shiftArray([...arr()]));
           },
           props.index === 0 || props.index === 2 ? 200 : 300,
         );
@@ -82,12 +84,8 @@ const App: Component = () => {
         })}
       </div>
       <div class="input">
-        <input
-          class="input-matrix"
-          value={text()}
-          onInput={(e) => setText(e.target.value)}
-        />
-        <span class="text">{text()}</span>
+        <EditableText text={text()} setText={setText} />
+        <p class="text">{text()}</p>
       </div>
     </>
   );
