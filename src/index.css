@@ -1,139 +1,127 @@
 body {
-    background-color: black;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: flex;
-    flex-direction: row;
-    color: lime;
+  background-color: black;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: row;
+  color: lime;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .cols {
-    display: flex;
+  display: flex;
 }
 
 .col {
-    width: 30px;
+  width: 30px;
 }
 
 .white0 {
-    color: lime;
+  color: white;
 }
 .white1 {
-    color: lime;
-    opacity: 0.75;
+  color: white;
+  opacity: 0.75;
 }
 .white2 {
-    color: lime;
-    opacity: 0.5;
+  color: white;
+  opacity: 0.5;
 }
 .white3 {
-    color: lime;
-    opacity: 0.35;
+  color: white;
+  opacity: 0.35;
 }
 
 .nonwhite0 {
-    color: lime;
+  color: white;
 }
 .nonwhite1 {
-    color: lime;
-    opacity: 0.75;
+  color: white;
+  opacity: 0.75;
 }
 .nonwhite2 {
-    color: lime;
-    opacity: 0.5;
+  color: white;
+  opacity: 0.5;
 }
 .nonwhite3 {
-    color: lime;
-    opacity: 0.35;
+  color: white;
+  opacity: 0.35;
 }
 
 .white0:last-child {
-    color: white;
-    font-weight: bold;
-    text-shadow:
-        0 0 2px #fff,
-        0 0 10px #0fa,
-        0 0 20px #0fa;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff;
 }
 .white1:last-child {
-    color: white;
-    font-weight: bold;
-    opacity: 0.85;
-    text-shadow:
-        0 0 2px #fff,
-        0 0 10px #0fa,
-        0 0 20px #0fa;
+  color: white;
+  font-weight: bold;
+  opacity: 0.85;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff;
 }
 .white2:last-child {
-    color: white;
-    font-weight: bold;
-    opacity: 0.65;
-    text-shadow:
-        0 0 2px #fff,
-        0 0 10px #0fa,
-        0 0 20px #0fa;
+  color: white;
+  font-weight: bold;
+  opacity: 0.65;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff;
 }
 .white3:last-child {
-    color: white;
-    font-weight: bold;
-    opacity: 0.5;
-    text-shadow:
-        0 0 2px #fff,
-        0 0 10px #0fa,
-        0 0 20px #0fa;
+  color: white;
+  font-weight: bold;
+  opacity: 0.5;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff;
 }
 
 .input {
-    position: absolute;
-    bottom: 80px;
+  position: absolute;
+  bottom: 80px;
 }
 
 .input-matrix {
-    width: 100%;
-    width: 400px;
-    padding: 12px 20px;
-    margin: 10px 50px;
-    box-sizing: border-box;
-    background-color: #111;
-    color: #00ff00;
-    font-size: 16px;
-    border: 1px solid #00ff00;
-    border-radius: 4px;
-    outline: none;
-    transition: all 0.4s ease-in-out;
+  width: 100%;
+  width: 400px;
+  padding: 12px 20px;
+  margin: 10px 50px;
+  box-sizing: border-box;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.4s ease-in-out;
 }
 
 .text-matrix {
-    width: 100%;
-    width: 400px;
-    padding: 12px 20px;
-    margin: 10px 50px;
-    color: #00ff00;
-    font-size: 16px;
-    border-radius: 4px;
-    outline: none;
-    transition: all 0.4s ease-in-out;
+  width: 100%;
+  width: 400px;
+  padding: 12px 20px;
+  margin: 10px 50px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.4s ease-in-out;
 }
 
 .input-matrix::placeholder {
-    color: #008000;
-    opacity: 0.8;
+  color: whitesmoke;
+  opacity: 0.8;
 }
 
 .input-matrix:focus {
-    background-color: #222;
-    border-color: #00ff7f;
-    box-shadow: 0 0 10px #00ff00;
+  background-color: #222;
+  border-color: #fff;
+  box-shadow: 0 0 10px #fff;
 }
 .text {
-    color: lime;
+  color: white;
 }

@@ -7,7 +7,7 @@ import {
 } from "solid-js";
 import { EditableText } from "./EditableText";
 
-const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=[]{}|;:¿€Ø<>?/~`";
+const chars = "*";
 
 interface ColumnProps {
   index: number;
@@ -44,10 +44,10 @@ const Column: Component<ColumnProps> = (props) => {
           () => {
             setArr(shiftArray([...arr()]));
           },
-          props.index === 0 || props.index === 2 ? 200 : 300,
+          props.index === 0 || props.index === 2 ? 200 : 300
         );
       },
-      props.index === 0 ? 0 : props.index * 1200,
+      props.index === 0 ? 0 : props.index * 1200
     );
   });
 
