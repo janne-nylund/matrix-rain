@@ -25,59 +25,59 @@ code {
 }
 
 .white0 {
-  color: white;
+  color: lime;
 }
 .white1 {
-  color: white;
+  color: lime;
   opacity: 0.75;
 }
 .white2 {
-  color: white;
+  color: lime;
   opacity: 0.5;
 }
 .white3 {
-  color: white;
+  color: lime;
   opacity: 0.35;
 }
 
 .nonwhite0 {
-  color: white;
+  color: lime;
 }
 .nonwhite1 {
-  color: white;
+  color: lime;
   opacity: 0.75;
 }
 .nonwhite2 {
-  color: white;
+  color: lime;
   opacity: 0.5;
 }
 .nonwhite3 {
-  color: white;
+  color: lime;
   opacity: 0.35;
 }
 
 .white0:last-child {
   color: white;
   font-weight: bold;
-  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff;
+  text-shadow: 0 0 2px #fff, 0 0 10px #0fa, 0 0 20px #0fa;
 }
 .white1:last-child {
   color: white;
   font-weight: bold;
   opacity: 0.85;
-  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff;
+  text-shadow: 0 0 2px #fff, 0 0 10px #0fa, 0 0 20px #0fa;
 }
 .white2:last-child {
   color: white;
   font-weight: bold;
   opacity: 0.65;
-  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff;
+  text-shadow: 0 0 2px #fff, 0 0 10px #0fa, 0 0 20px #0fa;
 }
 .white3:last-child {
   color: white;
   font-weight: bold;
   opacity: 0.5;
-  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff;
+  text-shadow: 0 0 2px #fff, 0 0 10px #0fa, 0 0 20px #0fa;
 }
 
 .input {
@@ -92,9 +92,9 @@ code {
   margin: 10px 50px;
   box-sizing: border-box;
   background-color: #111;
-  color: #fff;
+  color: #00ff00;
   font-size: 16px;
-  border: 1px solid #fff;
+  border: 1px solid #00ff00;
   border-radius: 4px;
   outline: none;
   transition: all 0.4s ease-in-out;
@@ -105,7 +105,7 @@ code {
   width: 400px;
   padding: 12px 20px;
   margin: 10px 50px;
-  color: #fff;
+  color: #00ff00;
   font-size: 16px;
   border-radius: 4px;
   outline: none;
@@ -113,15 +113,15 @@ code {
 }
 
 .input-matrix::placeholder {
-  color: whitesmoke;
+  color: #008000;
   opacity: 0.8;
 }
 
 .input-matrix:focus {
   background-color: #222;
-  border-color: #fff;
-  box-shadow: 0 0 10px #fff;
+  border-color: #00ff7f;
+  box-shadow: 0 0 10px #00ff00;
 }
 .text {
-  color: white;
+  color: lime;
 }

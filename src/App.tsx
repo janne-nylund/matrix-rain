@@ -7,7 +7,7 @@ import {
 } from "solid-js";
 import { EditableText } from "./EditableText";
 
-const chars = "*";
+const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=[]{}|;:¿€Ø<>?/~`";
 
 interface ColumnProps {
   index: number;
